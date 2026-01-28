@@ -1,12 +1,12 @@
 # is-project
 
 ## Project overview
-This project was made by me and my team during our college course **Information Systems**. It was built only to showcase the HTML and CSS skills we learned in class, and it is **not** intended to be a fully functional website or production-ready product.
+This project was created by me and my team during our college **Information Systems** course. It was built solely to showcase the HTML and CSS skills we learned in class, and it is **not** intended to be a fully functional or production-ready website.
 
 ## Purpose and scope
-- Static front-end demo showcasing layout, styling, and responsive structure.
-- No backend, database, or real data integrations.
-- Pages and forms are for presentation only and are not connected to any real services.
+- Static front-end demo highlighting layout, styling, and responsive structure
+- No backend, database, or real data integrations
+- Pages and forms are for presentation only and are not connected to live services
 
 ## Tech stack
 - HTML
@@ -23,7 +23,7 @@ This project was made by me and my team during our college course **Information 
 - `login.html` – login page layout
 - `sign-up.html` – registration page layout
 - `styles.css` / `style.css` – styling for the pages
-- Image assets (`.jpg`) used across the pages
+- `images/` – local image assets used across the pages
 
 ## Notes
 This repository is intentionally kept simple to reflect the learning objectives of our coursework. If you are reviewing this project, please treat it as a visual showcase rather than a complete web application.
