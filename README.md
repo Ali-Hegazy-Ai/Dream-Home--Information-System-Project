@@ -1,4 +1,4 @@
-# Information System project "Dream Home 
+# Information System project "Dream Home"
 
 ## Project overview
 This project was created by me and my team during our college **Information Systems** course. It was built solely to showcase the HTML and CSS skills we learned in class, and it is **not** intended to be a fully functional or production-ready website.
