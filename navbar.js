@@ -1,6 +1,6 @@
 (function () {
   var navbar = '<header>' +
-    '<input type="checkbox" id="nav-toggle" hidden>' +
+    '<input type="checkbox" id="nav-toggle" class="nav-toggle">' +
     '<a href="index.html" class="logo">' +
       '<span>\uD83C\uDFE0</span> Dream Home' +
     '</a>' +
