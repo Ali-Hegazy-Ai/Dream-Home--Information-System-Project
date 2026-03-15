@@ -27,3 +27,10 @@ This project was created by me and my team during our college **Information Syst
 
 ## Notes
 This repository is intentionally kept simple to reflect the learning objectives of our coursework. If you are reviewing this project, please treat it as a visual showcase rather than a complete web application.
+
+## Development Team Roles
+- **Ali Hegazy**: Implemented the **navigation bar**, **hero section**, and **footer**.
+- **Teammate 1**: Built the **building section**, including links to the **OLX section**.
+- **Teammate 2**: Created the **sign-up page**.
+- **Teammate 3**: Created the **login page**.
+- **Teammate 4**: Built the **contact page**.
