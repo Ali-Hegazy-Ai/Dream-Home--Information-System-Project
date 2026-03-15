@@ -138,7 +138,7 @@ header .auth-buttons .login-btn:hover {
     }
 
     #nav-toggle:checked ~ .auth-buttons {
-        top: calc(100% + 120px);
+        top: calc(100% + 180px);
     }
 }
 
