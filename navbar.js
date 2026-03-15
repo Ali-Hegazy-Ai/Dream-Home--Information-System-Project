@@ -19,5 +19,5 @@
       '<span></span>' +
     '</label>' +
   '</header>';
-  document.write(navbar);
+  document.currentScript.insertAdjacentHTML('afterend', navbar);
 })();
