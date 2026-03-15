@@ -213,7 +213,7 @@ footer {
     }
 
     .nav-menu,
-    .auth-buttons {
+    header .auth-buttons {
         display: none;
         position: absolute;
         top: 100%;
