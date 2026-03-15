@@ -1,5 +1,5 @@
 * {
-    font-family: -apple-system, system-ui, sans-serif;
+    font-family: "Quicksand", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,8 +17,8 @@ header {
     border-bottom: 1.2px solid #ccc;
     box-shadow: 0 1px 20px 0 rgba(46, 61, 73, 0.2), 0 1px 2px 0 rgba(46, 61, 73, 0.2);
 }
+
 header .logo {
-    position: sticky;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -26,54 +26,34 @@ header .logo {
     font-weight: bold;
     color: #5D4FE7;
     text-decoration: none;
-
 }
+
 header .logo span {
-
-
     font-size: 28px;
 }
-header nav {
-    position: sticky;
-    display: flex;
-    gap: 1rem;
-}
-.nav-menu {
 
+.nav-menu {
     display: flex;
     gap: 2em;
     text-align: center;
     margin-left: auto;
 }
+
 .nav-menu a {
     color: #666;
     text-decoration: none;
     padding: 8px 0;
     font-weight: 500;
-
 }
 
 .nav-menu a:hover {
-
     color: #5D4FE7;
 }
 
-header nav a {
-    position: relative;
-    color: grey;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-
-
 header .auth-buttons {
-
     display: flex;
     gap: 20px;
     margin-left: auto;
-
-
 }
 
 header .auth-buttons .signup-btn,
@@ -84,36 +64,46 @@ header .auth-buttons .login-btn {
     cursor: pointer;
     font-weight: 500;
     transition: all 0.3s;
-
-
 }
-.signup-btn {
 
+.signup-btn {
     background: #5D4FE7;
     color: white;
 }
-.signup-btn:hover {
 
+.signup-btn:hover {
     background: #4d41c2;
     color: white;
 }
 
-
-
 .login-btn {
-
     background: transparent;
     color: #5D4FE7;
     border: 2px solid #5D4FE7 !important;
 }
 
 header .auth-buttons .login-btn:hover {
-
     background: #5D4FE7;
     color: white;
 }
 
+/* Hamburger menu */
+.nav-toggle-label {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 1rem;
+}
 
+.nav-toggle-label span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #5D4FE7;
+    transition: all 0.3s;
+}
 
 .outer-container {
     display: flex;
@@ -145,10 +135,7 @@ header .auth-buttons .login-btn:hover {
     padding: 10px 15px;
     font-size: 16px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    
 }
-
-
 
 input::placeholder, textarea::placeholder {
     font-weight: 500;
@@ -165,10 +152,7 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 25px;
-   
 }
-
-
 
 .hr {
     height: 1px;
@@ -213,10 +197,52 @@ footer {
 .social-links {
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 32px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ── Mobile styles ── */
+@media (max-width: 768px) {
+    .nav-toggle-label {
+        display: flex;
+    }
+
+    .nav-menu,
+    .auth-buttons {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        border-bottom: 1px solid #ccc;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        gap: 1rem;
+    }
+
+    #nav-toggle:checked ~ .nav-menu,
+    #nav-toggle:checked ~ .auth-buttons {
+        display: flex;
+    }
+
+    #nav-toggle:checked ~ .auth-buttons {
+        top: calc(100% + 120px);
+    }
+
+    .inner-container {
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    footer {
+        padding: 40px 20px 24px;
+    }
 }
